@@ -1,5 +1,6 @@
 import Abstract.BaseGamerManager;
 import Abstract.GamerCheckService;
+import Adapter.MernisAdapter;
 import Concrete.GamerManager;
 import Concrete.GamesSellingManager;
 import Concrete.SaleManager;
@@ -10,10 +11,12 @@ import Entities.Sales;
 public class Main {
 
 	public static void main(String[] args) {
-		BaseGamerManager baseManager = new GamerManager(new GamerCheckService());
+		BaseGamerManager baseManager = new GamerManager(new MernisAdapter());
 		Gamer gamer = new Gamer();
-		gamer.setlName("adad");
-		gamer.setName("adad");
+		gamer.setlName("AAA");
+		gamer.setName("BBB");
+		gamer.setTcNo("123456789");
+		gamer.setDate(1999);
 		double total=0;
 		baseManager.save(gamer);
 		Games[] games = new Games[3] ;

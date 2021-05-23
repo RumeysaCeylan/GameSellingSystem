@@ -1,16 +1,14 @@
 package Entities;
 
-import java.util.Date;
-
 public class Gamer {
 	private String tcNo;
 	private String name;
 	private String lName;
-	private Date date;
+	private int date;
 	public Gamer() {
 		super();
 	}
-	public Gamer(String tcNo, String name, String lName, Date date) {
+	public Gamer(String tcNo, String name, String lName, int date) {
 		
 		this.tcNo = tcNo;
 		this.name = name;
@@ -26,7 +24,7 @@ public class Gamer {
 	public String getlName() {
 		return lName;
 	}
-	public Date getDate() {
+	public int getDate() {
 		return date;
 	}
 	public void setTcNo(String tcNo) {
@@ -38,7 +36,7 @@ public class Gamer {
 	public void setlName(String lName) {
 		this.lName = lName;
 	}
-	public void setDate(Date date) {
+	public void setDate(int date) {
 		this.date = date;
 	}
 }

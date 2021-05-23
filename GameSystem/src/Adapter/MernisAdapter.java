@@ -15,7 +15,8 @@ public class MernisAdapter implements IGamerCheckService {
 		boolean result=true;
 		
 		try {
-			result= proxy.TCKimlikNoDogrula(Long.parseLong(gamer.getTcNo()), gamer.getName().toUpperCase(), gamer.getlName().toUpperCase(), gamer.getDate().getYear());
+			result= proxy.TCKimlikNoDogrula(Long.parseLong(gamer.getTcNo()), gamer.getName().toUpperCase(),
+					gamer.getlName().toUpperCase(), gamer.getDate());
 		} catch (NumberFormatException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
