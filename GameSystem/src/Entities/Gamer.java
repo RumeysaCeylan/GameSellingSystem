@@ -5,15 +5,17 @@ public class Gamer {
 	private String name;
 	private String lName;
 	private int date;
+	private double total;
 	public Gamer() {
 		super();
 	}
-	public Gamer(String tcNo, String name, String lName, int date) {
+	public Gamer(String tcNo, String name, String lName, int date,double total) {
 		
 		this.tcNo = tcNo;
 		this.name = name;
 		this.lName = lName;
 		this.date = date;
+		this.total=total;
 	}
 	public String getTcNo() {
 		return tcNo;
@@ -38,5 +40,11 @@ public class Gamer {
 	}
 	public void setDate(int date) {
 		this.date = date;
+	}
+	public double getTotal() {
+		return total;
+	}
+	public void setTotal(double total) {
+		this.total = total;
 	}
 }
